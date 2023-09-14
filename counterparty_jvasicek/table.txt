@@ -1,0 +1,35 @@
+10 & Avg. Sol. & $12.6439$ & $12.8667$ & $12.7782$ & $12.8062$ & $12.8130$ \\ 
+ & \textit{Std. Dev.} & \textit{0.7686} & \textit{0.3133} & \textit{0.1732} & \textit{0.0519} & \textit{0.0193} \\ 
+ & Avg. Eval. & $4.23 \cdot 10^{4}$ & $3.56 \cdot 10^{5}$ & $5.03 \cdot 10^{6}$ & $9.88 \cdot 10^{7}$ & $2.45 \cdot 10^{9}$ \\ 
+ & \textit{Avg. Time} & \textit{0.0016} & \textit{0.0141} & \textit{0.1534} & \textit{2.8302} & \textit{70.5218} \\ 
+\hline 
+50 & Avg. Sol. & $11.7451$ & $12.1087$ & $11.8201$ & $11.7833$ & $11.8102$ \\ 
+ & \textit{Std. Dev.} & \textit{0.5888} & \textit{0.4380} & \textit{0.1114} & \textit{0.0414} & \textit{0.0115} \\ 
+ & Avg. Eval. & $1.87 \cdot 10^{5}$ & $1.67 \cdot 10^{6}$ & $2.37 \cdot 10^{7}$ & $4.57 \cdot 10^{8}$ & $1.13 \cdot 10^{10}$ \\ 
+ & \textit{Avg. Time} & \textit{0.0016} & \textit{0.0251} & \textit{0.3770} & \textit{5.9702} & \textit{151.1463} \\ 
+\hline 
+100 & Avg. Sol. & $11.3215$ & $11.4291$ & $11.4581$ & $11.4258$ & $11.4468$ \\ 
+ & \textit{Std. Dev.} & \textit{0.3986} & \textit{0.3069} & \textit{0.1650} & \textit{0.0432} & \textit{0.0092} \\ 
+ & Avg. Eval. & $3.76 \cdot 10^{5}$ & $3.17 \cdot 10^{6}$ & $4.66 \cdot 10^{7}$ & $9.06 \cdot 10^{8}$ & $2.24 \cdot 10^{10}$ \\ 
+ & \textit{Avg. Time} & \textit{0.0079} & \textit{0.0533} & \textit{0.6849} & \textit{12.3840} & \textit{300.3673} \\ 
+\hline 
+500 & Avg. Sol. & $10.8580$ & $10.6897$ & $10.6524$ & $10.6949$ & $10.6960$ \\ 
+ & \textit{Std. Dev.} & \textit{0.3835} & \textit{0.2409} & \textit{0.0701} & \textit{0.0405} & \textit{0.0069} \\ 
+ & Avg. Eval. & $1.66 \cdot 10^{6}$ & $1.60 \cdot 10^{7}$ & $2.31 \cdot 10^{8}$ & $4.50 \cdot 10^{9}$ & $1.11 \cdot 10^{11}$ \\ 
+ & \textit{Avg. Time} & \textit{0.0251} & \textit{0.2411} & \textit{3.3046} & \textit{63.6527} & \textit{1563.3035} \\ 
+\hline 
+1000 & Avg. Sol. & $10.6316$ & $10.4786$ & $10.3588$ & $10.4011$ & $10.4021$ \\ 
+ & \textit{Std. Dev.} & \textit{0.4451} & \textit{0.3437} & \textit{0.0910} & \textit{0.0265} & \textit{0.0092} \\ 
+ & Avg. Eval. & $3.54 \cdot 10^{6}$ & $3.26 \cdot 10^{7}$ & $4.68 \cdot 10^{8}$ & $9.00 \cdot 10^{9}$ & $2.23 \cdot 10^{11}$ \\ 
+ & \textit{Avg. Time} & \textit{0.0549} & \textit{0.4985} & \textit{6.6654} & \textit{126.1326} & \textit{3039.6606} \\ 
+\hline 
+5000 & Avg. Sol. & $9.7696$ & $9.8894$ & $9.7807$ & $9.7843$ & $9.7854$ \\ 
+ & \textit{Std. Dev.} & \textit{0.5765} & \textit{0.2825} & \textit{0.0763} & \textit{0.0235} & \textit{0.0105} \\ 
+ & Avg. Eval. & $1.85 \cdot 10^{7}$ & $1.60 \cdot 10^{8}$ & $2.30 \cdot 10^{9}$ & $4.48 \cdot 10^{10}$ & $1.11 \cdot 10^{12}$ \\ 
+ & \textit{Avg. Time} & \textit{0.2481} & \textit{2.2290} & \textit{31.9406} & \textit{616.2213} & \textit{15233.9473} \\ 
+\hline 
+10000 & Avg. Sol. & $9.8036$ & $9.4448$ & $9.5468$ & $9.5395$ & $9.5347$ \\ 
+ & \textit{Std. Dev.} & \textit{0.3240} & \textit{0.1942} & \textit{0.0539} & \textit{0.0311} & \textit{0.0057} \\ 
+ & Avg. Eval. & $3.77 \cdot 10^{7}$ & $3.25 \cdot 10^{8}$ & $4.61 \cdot 10^{9}$ & $8.98 \cdot 10^{10}$ & $2.22 \cdot 10^{12}$ \\ 
+ & \textit{Avg. Time} & \textit{0.5087} & \textit{4.4832} & \textit{63.7070} & \textit{1234.3232} & \textit{30334.4023} \\ 
+\hline 
