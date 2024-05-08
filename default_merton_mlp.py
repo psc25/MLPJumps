@@ -4,30 +4,30 @@ import os
 import time
 from MultiLevelPicardJump import MLP_model
 
-path = os.path.join(os.getcwd(), "counterparty_jvasicek/")
+path = os.path.join(os.getcwd(), "default_merton\\")
 dtype = np.float32
 
 N = 12
 Mnmax = 5
-T = 1.0/2.0
+T = 1.0/3.0
 
-x0 = 100.0
-alpha = 0.01
-mu0 = 100.0
-sigma0 = 2.0
-lam = 0.5
+x0 = 30.0
+mu0 = -0.01
+sigma0 = 0.15
+lam = 0.2
+muZ = -0.05
+sigmaZ = 0.1
 delta = 0.1
 M0 = 200
 
-beta = 0.03
+beta, R = 2.0/3.0, 0.02
+vh, vl = 25.0, 50.0
+gammah, gammal = 0.2, 0.02
 def f(t, x, y):
-    return -beta*np.fmin(y, 0)
+    return -(1.0-beta)*np.fmin(np.fmax((y-vh)*(gammah-gammal)/(vh-vl)+gammah, gammal), gammah)*y - R*y
 
-K1 = 80.0
-K2 = 100.0
-L = 5.0
 def g(x):
-    return np.fmax(np.min(x, axis = -1, keepdims = True) - K1, 0) - np.fmax(np.min(x, axis = -1, keepdims = True) - K2, 0) - L
+    return np.min(x, axis = -1, keepdims = True)
 
 dd = [10, 50, 100, 500, 1000, 5000, 10000]
 runs = 10
@@ -36,15 +36,15 @@ print("======================================================================")
 for i in range(len(dd)):
     d = dd[i]
     def mu(t, x):
-        return alpha*(mu0-x)
+        return (mu0+sigma0**2/2.0+lam*(np.exp(muZ+sigmaZ**2/2.0)-1.0-muZ))*x
     
     def sigmadiag(t, x):
-        return sigma0
+        return sigma0*x
     
     def eta(t, x, z):
-        return z
+        return np.expand_dims(x, 0)*(np.exp(z)-1.0)
     
-    distr = sst.uniform(loc = 0.0, scale = 1.0)
+    distr = sst.norm(loc = mu0, scale = sigma0)
     nuAdelta = lam*np.mean(np.linalg.norm(distr.rvs(size = [5000, d]), axis = -1) >= delta)
     def Zdelta(size):
         Z = distr.rvs(size = size)
